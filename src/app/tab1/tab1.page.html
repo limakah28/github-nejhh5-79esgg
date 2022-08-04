@@ -7,63 +7,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  
-  <ion-card color="glass">
+  <ion-card color="glass" *ngFor="let pokemon of listaPokemon">
     <ion-card-header>
-      <img class="img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
+      <img
+        class="img"
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+      />
       <div class="info">
-      <p>#001</p>
-      <P>Bulbasaur</P>
-      <ion-badge class="bord" color="glass">Grass</ion-badge>
-      <ion-badge class="bord" color="poison">Poison</ion-badge>
-    </div >
+        <p>#001</p>
+        <p>{{pokemon['name']}}</p>
+        <ion-badge class="bord" color="glass">Grass</ion-badge>
+        <ion-badge class="bord" color="poison">Poison</ion-badge>
+      </div>
     </ion-card-header>
-  
-    
   </ion-card>
-
-  <ion-card color="fire">
-    <ion-card-header>
-      
-      <img class="img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png">
-      <div class="info">
-      <p>#004</p>
-      <P class="color">Charmander</P>
-      <ion-badge class="bord" color="fire" c>Fire</ion-badge>
-    </div>
-    </ion-card-header>
-  
-   
-  </ion-card>
-
-  <ion-card color="water">
-    <ion-card-header  >
-      <img class="img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png">
-      <div class="info">
-        <p>#007</p>
-      <P class="color">Squirtle</P>
-      <ion-badge class="bord" color="water">Water</ion-badge>
-    </div>
-    
-    </ion-card-header>
-  
-    
-  </ion-card>
-
-  <ion-card color="eletric" >
-    <ion-card-header>
-      <img class="img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png">
-      <div class="info">
-        <p>#025</p>
-      <P >Pikachu</P>
-      <ion-badge class="bord" color="eletric">Eletric</ion-badge>
-    </div>
-    
-    </ion-card-header>
-  
-    
-  </ion-card>
-
- 
 </ion-content>
